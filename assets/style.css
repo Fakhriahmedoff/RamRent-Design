@@ -2113,3 +2113,19 @@ color: #FFCB00;
 .single-requirement span{
     color: #FFCB00;
 }
+.company-page .col-lg-6.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 80px;
+
+
+}
+.company-page .col-lg-6.second p{
+    line-height: 186.4%;
+    font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+color: white;
+}
