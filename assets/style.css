@@ -2060,6 +2060,10 @@ color: #FFCB00;
     padding-left: 1.3em !important;
 }
 .single-car .discounts li{
+    color: #FFCB00;
+    font-size: 24px;
+}
+.single-car .discounts li span{
     color: white;
     font-size: 24px;
     Font-family: Gilroy;
