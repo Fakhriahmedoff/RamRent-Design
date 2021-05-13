@@ -2204,3 +2204,10 @@ font-size: 24px;
 .contact-details{
     padding-left: 0px !important;
 }
+#page-content{
+    opacity: 0;
+}
+#page-content.active{
+transition: 0.3s all;
+    opacity: 1;
+}
