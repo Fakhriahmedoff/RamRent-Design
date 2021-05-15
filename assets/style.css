@@ -2138,7 +2138,7 @@ color: white;
     height: 4px;
     position: absolute;
     z-index: 999999;
-    border: 1px solid #111;
+
     background-color: #292929;
 }
 
@@ -2149,7 +2149,7 @@ color: white;
     text-align: right;
     line-height: 22px; /* same as #progressBar height if we want text middle aligned */
     width: 0;
-    background-color: #6A6A6A;
+    background-color: white;
 }
 .contact-link{
     width: 290px !important;
@@ -2206,8 +2206,9 @@ font-size: 24px;
 }
 #page-content{
     opacity: 0;
+    transition: 1s all;
 }
 #page-content.active{
-transition: 0.3s all;
+transition: 1s all;
     opacity: 1;
 }

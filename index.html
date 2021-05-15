@@ -34,6 +34,8 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
             crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+            <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
         <!-- Font Awesome -->
 
         <link
@@ -51,6 +53,7 @@
     </head>
 
     <body>
+       
         <header class="home">
             <!--Navbar-->
             <nav id="header" class="navbar navbar-dark indigo darken-2 stroke">
@@ -127,14 +130,18 @@
             <!-- END HOME PAGE TITLE -->
 
         </header>
-
+<div id="page-content">
+ 
         <div class="swiper-container">
+           
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:
                     url('/images/background-img.jpg'); background-size: cover;">
                     <div class="section-breadcrumb">
                         <div class="row">
                             <div class="col-md-6">
+                                
+
                                 <h1 class="main-title">CHEVROLET AVEO</h1>
                                 <h1 class="main-title-below">45 AZN / day</h1>
                                 <a class="main-button hover-6" href="#">
@@ -646,6 +653,7 @@
 
                 </div>
             </footer>
+        </div>
             <script>
                 //Get the button
                 var header = document.getElementById("header");
@@ -681,6 +689,31 @@
             <script
                 type="text/javascript"
                 src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+                <script src="https://unpkg.com/rive-js@0.7.6/dist/rive.min.js"></script>
+                <script src="https://unpkg.com/rive-js@0.7.6/dist/rive.min.js"></script>
+                <script>
+                  // autoplays the first animation in the default artboard
+                  new rive.Rive({
+                    src: 'https://public.rive.app/community/runtime-files/77-114-car-example.riv',
+                    canvas: document.getElementById('canvas'),
+                    autoplay: true,
+                  })
+                </script>
+                <script>
+                      function progress(percent, $element) {
+                    var progressBarWidth = percent * $element.width() / 100;
+                    $element.find('div').animate({ width: progressBarWidth }, 500).html();
+                    }
+
+                    NProgress.start();
+                
+                    $(document).ready(function(){
+                        $("#page-content").addClass('active');
+                        NProgress.done();
+
+                    });
+                
+                </script>
             <script>
         new Splide('#splide', {
             type: 'loop',
