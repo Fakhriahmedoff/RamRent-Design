@@ -1913,6 +1913,15 @@ img.connetor-right{
 .navbar .img-responsive{
     margin-top: -40px;
 }
+a.navbar-brand.navbar-brand-logo img{
+    filter: invert(1) brightness(5);
+}
+.navbar.sticky a.navbar-brand.navbar-brand-logo img{
+filter: none !important;
+}
+ul.navbar-nav.mr-auto .navbar-brand img{
+    margin-top: -16px !important;
+}
 .footer-link img{
     width: 32px;
     height: 32px;
@@ -2266,4 +2275,54 @@ height: 692px;
     max-width: 60% !important;
     flex-direction: column;
     width: 60% !important;
+}
+.swiper-container.homepage .swiper-pagination{
+    text-align: left;
+    left: 160px;
+    bottom: 40px;
+}
+.swiper-container.homepage .swiper-pagination-bullet{
+    background: #C4C4C4;
+}
+.width-md.rent-input{
+width: 477px;
+height: 66px;
+}
+.datetime.rent-input{
+    width: 477px;
+    height: 66px;
+    }
+.width-lg.rent-input{
+    width: 976px;
+    height: 66px;
+    }
+    .width-lg.rent-textarea{
+        width: 976px;
+        height: 119px;
+        }
+    .width-sm.rent-input{
+        width: 307px;
+        height: 66px;
+        }
+.container.rent-form {
+    display: flex;
+    justify-content: center;
+}
+.container.rent-form .form-wrapper{
+max-width: 976px;
+}
+.container.rent-form .form-wrapper form.rent-form-online{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.rent-input, .rent-textarea{
+    background: transparent;
+    border-color: #FFCB00;
+    color: white;
+    border-width: 1px !important;
+}
+.rent-input::placeholder, .rent-textarea::placeholder{
+    color: white;
 }
