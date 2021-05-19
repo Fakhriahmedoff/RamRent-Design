@@ -2225,7 +2225,7 @@ transition: 1s all;
 }
 .container-fluid.classes .class-holder:hover img{
     transform: scale(1.2);
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 .tags{
     text-align: center;
@@ -2248,4 +2248,22 @@ button.navbar-toggler.third-button.homepage .animated-icon3 span{
 }
 .social-links{
     padding-left: 1rem;
+}
+.container-fluid.about-text.no-borders .row{
+    border-width: 0px !important;
+}
+.container-fluid.about-text.ndn  .first img{
+    width: 632px;
+height: 692px;
+
+}
+.container-fluid.about-text.ndn  .col-lg-6.first{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 40% !important;
+}
+.container-fluid.about-text.ndn  .col-lg-6.second{
+    max-width: 60% !important;
+    flex-direction: column;
+    width: 60% !important;
 }
