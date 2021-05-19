@@ -2320,9 +2320,18 @@ max-width: 976px;
 .rent-input, .rent-textarea{
     background: transparent;
     border-color: #FFCB00;
+    padding: 15px;
     color: white;
+    font-family: Gilroy;
+    font-size: 24px;
     border-width: 1px !important;
+}
+.rent-input:focus, .rent-textarea:focus{
+    border-color: #FFCB00;
 }
 .rent-input::placeholder, .rent-textarea::placeholder{
     color: white;
+    font-family: Gilroy;
+    font-size: 24px;
+    
 }
