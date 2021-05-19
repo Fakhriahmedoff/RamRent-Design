@@ -2229,3 +2229,22 @@ transition: 1s all;
 .tags{
     text-align: center;
 }
+button.navbar-toggler.third-button .animated-icon3 span{
+background: black;
+}
+button.navbar-toggler.third-button.homepage .animated-icon3 span{
+    background: white;
+    }
+
+.right-panel{
+    position: absolute;
+    top: 27%;
+    right: 187px;
+}
+.social-links li{
+    display: flex;
+    justify-content: center;
+}
+.social-links{
+    padding-left: 1rem;
+}
